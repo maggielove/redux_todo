@@ -1,0 +1,24 @@
+{
+  "name": "redux_todo",
+  "version": "1.0.0",
+  "description": "To do app made with React & Redux",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.16.0",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
