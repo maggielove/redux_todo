@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from  'actions/todos'
+import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from  './actions/todos'
 const { SHOW_ALL } = VisibilityFilters
 
 const initialState = {
@@ -45,9 +45,7 @@ function visibilityFilter(state = SHOW_ALL, action) {
 }
 
 //gets default state from child reducers (todos, VisibilityFilter)
-const todoApp = combineReducers({
+export const todoApp = combineReducers({
     visibilityFilter,
     todos
 });
-
-export default todoApp
