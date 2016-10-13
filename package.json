@@ -4,6 +4,8 @@
   "description": "To do app made with React & Redux",
   "main": "index.js",
   "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",

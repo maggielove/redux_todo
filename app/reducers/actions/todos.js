@@ -9,21 +9,21 @@ export const VisibilityFilters = {
     SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
 
-const addTodo = (text) => {
+export const addTodo = (text) => {
     return {
         type: ADD_TODO,
         text
     };
 };
 
-const toggleTodo = (index) => {
+export const toggleTodo = (index) => {
     return {
         type: TOGGLE_TODO,
         index
     }
 }
 
-const editTodo = (id, text) => {
+export const editTodo = (id, text) => {
     return {
         type: EDIT_TODO,
         id,
