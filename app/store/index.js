@@ -1,9 +1,20 @@
-import { todoApp } from '../reducers/todos';
+import React from 'react';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import { todoApp } from '../reducers/todos';
 import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters  } from '../reducers/actions/todos';
+import App from '../components/App';
 
 //hydrate the state of the client to match the state of Redux app on server
 const store = createStore(todoApp, window.STATE_FROM_SERVER);
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+)
 
 console.log(store.getState());
 
