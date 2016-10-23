@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import { todoApp } from '../reducers/todos';
 import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters  } from '../reducers/actions/todos';
 import App from '../components/App';
+import * as style from '../style/style.scss';
 
 //hydrate the state of the client to match the state of Redux app on server
 const store = createStore(todoApp, window.STATE_FROM_SERVER);
