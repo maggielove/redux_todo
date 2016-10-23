@@ -7,6 +7,14 @@ const initialState = {
     todos: []
 }
 
+let todoId = 0;
+
+function getTodoId () {
+    for (let i = 0; i >= 0; i++) {
+        return todoId++;
+    }
+}
+
 //manages its own part of the global state
 function todos (state = [], action) {
     switch (action.type) {
@@ -14,14 +22,15 @@ function todos (state = [], action) {
             return [
                 ...state,
                 {
+                    id: getTodoId(),
                     text: action.text,
-                    completed: false
+                    completed: false,
                 }
             ]
         case TOGGLE_TODO:
                 //Create a new array with the same todo items...
                 return state.map((todo, index) => {
-                    //..except at the idnex for the todo we want to toggle.
+                    //..except at the index for the todo we want to toggle.
                     if (index === action.index) {
                         return Object.assign({}, todo, {
                             completed: !todo.completed
