@@ -1,5 +1,54 @@
 $font: Helvetica, sans-serif;
+$border: 1.9px solid grey;
+$border-radius: 5px;
+$row-width: 500px;
+$body-bg: transparent;
 
 body {
     font: 100% $font;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: #89a9dc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.row {
+    width: $row-width;
+    margin: auto;
+    flex-flow: row wrap;
+}
+
+input {
+    height: 25px;
+    width: $row-width / 2;
+    border-radius: $border-radius;
+    border: $border;
+    margin-left: 80px;
+}
+
+button {
+    height: 30px;
+    margin-left: 10px;
+    border-radius: $border-radius;
+    border: $border;
+    font: 80% $font;
+    background-color: transparent;
 }
