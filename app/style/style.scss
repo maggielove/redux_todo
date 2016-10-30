@@ -1,11 +1,13 @@
 $font: Helvetica, sans-serif;
-$border: 1.9px solid grey;
+$border: 1.9px solid #eee;
 $border-radius: 5px;
 $row-width: 500px;
 $body-bg: transparent;
+$clickable: #89a9dc;
 
 body {
     font: 100% $font;
+    background-image: url('./backgrounds/hoffman.png');
 }
 
 .container {
@@ -40,8 +42,9 @@ button {
     margin-left: 10px;
     border-radius: $border-radius;
     border: $border;
+    border-color: $clickable;
     font: 80% $font;
-    background-color: transparent;
+    background-color: $clickable;
 }
 
 //ToDo list

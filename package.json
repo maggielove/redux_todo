@@ -17,10 +17,12 @@
     "babel-loader": "^6.2.5",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "node-sass": "^3.4.20",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.2"
   },
   "scripts": {
