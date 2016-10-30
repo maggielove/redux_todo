@@ -8,15 +8,6 @@ body {
     font: 100% $font;
 }
 
-ul {
-    display: inline-block;
-    text-align: left;
-}
-
-a {
-    color: #89a9dc;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -51,4 +42,22 @@ button {
     border: $border;
     font: 80% $font;
     background-color: transparent;
+}
+
+//ToDo list
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: #89a9dc;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.active {
+    text-decoration: none;
 }
