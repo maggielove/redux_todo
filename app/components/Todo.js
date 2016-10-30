@@ -5,6 +5,7 @@ const Todo = ({ onClick, completed, text, id }) => (
         onClick={onClick}
         className={completed ? 'completed' : 'active'}
     >
+        <input className={'checkbox'} type='checkbox' />
         {text}
     </li>
 );
